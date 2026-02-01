@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的可爱网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #ffe6f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+            border: 5px solid #ff99cc;
+        }
+        
+        h1 {
+            color: #ff66a3;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        
+        .image-container {
+            margin: 30px 0;
+        }
+        
+        .my-image {
+            max-width: 100%;
+            border-radius: 15px;
+            border: 5px solid #ffccdd;
+            box-shadow: 0 5px 15px rgba(255, 102, 163, 0.3);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff66a3, #ff99cc);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(255, 102, 163, 0.4);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #ff99cc;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ 欢迎来到我的网站！ ✨</h1>
+        
+        <p>你好！这是我的个人网站，我在这里分享我喜欢的东西~</p>
+        
+        <div class="image-container">
+            <!-- 使用GitHub上的图片 -->
+            <img src="https://cdn.jsdelivr.net/gh/baobao/my-website-images/images/bao.png" 
+                 alt="我的头像" 
+                 class="my-image"
+                 width="300">
+        </div>
+        
+        <p>这个网站托管在GitHub Pages上，是完全免费的！</p>
+        
+        <div>
+            <a href="https://github.com/baobao" class="btn" target="_blank">访问我的GitHub</a>
+            <a href="https://github.com/baobao/baobao.github.io" class="btn" target="_blank">查看网站代码</a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 我的可爱网站 | 使用HTML和CSS创建</p>
+        </div>
+    </div>
+</body>
+</html>
